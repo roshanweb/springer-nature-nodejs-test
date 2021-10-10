@@ -1,0 +1,7 @@
+<% if(user){ %>
+
+<h4>Hello <%= user.first_name%> <%= user.last_name%>, Thank you for signing up. Your account
+is now created. <% if(user.subscribe == 'on'){ %> You would be receiving our periodic newsletters to your email: <%= user.email%>
+<% } %></h4>
+
+<% } %>
